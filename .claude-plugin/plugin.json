@@ -1,0 +1,15 @@
+{
+  "name": "bugsradar",
+  "displayName": "BugsRadar",
+  "version": "1.0.0",
+  "description": "Add error alerts to your projects, report failures from scripts and jobs, and send short notifications from Claude to your own chat with BugsRadar.",
+  "author": {
+    "name": "BugsRadar",
+    "email": "support@bistriy.com",
+    "url": "https://bugsradar.com"
+  },
+  "homepage": "https://bugsradar.com/docs/",
+  "repository": "https://github.com/bugsradar/bugsradar-claude-plugin",
+  "license": "MIT",
+  "keywords": ["alerts", "errors", "notifications", "monitoring", "logging", "devops"]
+}
