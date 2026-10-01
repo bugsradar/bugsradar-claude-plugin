@@ -9,7 +9,7 @@ Work from the sender to the chat. Ask the user only for what you need, and never
 
 ## 1. Is the request accepted?
 
-If the sender is a script or direct HTTP call, look at the status code (`curl -f` makes curl fail on anything but 202). `references/status-codes.md` lists the codes for the notify and CLEF endpoints.
+If the sender is a script or direct HTTP call, look at the status code the sender got (anything but 202 is a failure). `references/status-codes.md` lists the codes for the notify and CLEF endpoints.
 
 - **401**: the key is missing or wrong. Ask the user to check the variable or secret the code reads (name, no extra spaces or quotes, the right project). The Check API Key page in the web app shows which project a key belongs to.
 - **400**: the body is empty (notify) or has no CLEF line (CLEF).

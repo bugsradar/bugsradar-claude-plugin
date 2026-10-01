@@ -50,6 +50,7 @@ Sending notifications from Claude needs a shell on your computer and the variabl
 ## What the plugin sends, and where
 
 - Only the `notify` skill, `/bugsradar:notify` and `/bugsradar:doctor` send anything. They send an HTTPS request to `https://api.bugsradar.com/api/v3/notify` with the text you asked Claude to send, an optional level and category, and your key for Claude in the `X-Api-Key` header. Claude sends a message only when you ask: with a command, or with an instruction in your prompt such as "when you finish, send me a BugsRadar message". The text is a short line, and never code, file contents, command output or secrets.
+- The keys are BugsRadar keys and go only to `api.bugsradar.com`, the API of BugsRadar itself, never to any other host.
 - The plugin has no telemetry and sends nothing else anywhere. It does not read your project's keys, `.env` files or secret stores.
 - When you ask Claude to connect BugsRadar to a project, it installs the BugsRadar package from NuGet, npm or PyPI on your machine, as you requested, and edits your project's files. You review the diff.
 - BugsRadar keeps no messages: a message stays in memory only until it is delivered to your chat. Privacy policy: https://bugsradar.com/privacy-policy/. Terms: https://bugsradar.com/terms-of-use/.
